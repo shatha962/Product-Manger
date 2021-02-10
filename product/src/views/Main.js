@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import React, { useEffect, useState } from 'react';
 import ProductForm from '../components/ProductForm';
 import ProductList from '../components/ProductList';
+import axios from 'axios';
 export default () => {
     const [product, setProduct] = useState([]);
     const [loaded, setLoaded] = useState(false);
@@ -15,7 +15,7 @@ export default () => {
     return (
         <div>
             <ProductForm/>
-            {loaded && <ProductList product={product}/>}
+            <ProductList product={product}/>
         </div>
     )
 }
