@@ -15,7 +15,8 @@ export default () => {
     return (
         <div>
             <ProductForm/>
-            <ProductList product={product}/>
+            <hr/>
+            {loaded && <ProductList product={product}/>}
         </div>
     )
 }
